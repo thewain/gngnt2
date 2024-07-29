@@ -487,17 +487,7 @@ $(function() {
 	});
   
 	
-	// 탭메뉴
-	 $('.tabmenu li').on("click", function(){
-	  
-		  $(this).addClass('open');
-		  $(this).siblings().removeClass('open');
-  
-		  let i = $(this).index();
-  
-		  $('.activbox .itempic').eq(i).css({'display': 'block', 'display': 'flex'}); 
-		  $('.activbox .itempic').eq(i).siblings().hide();
-	  });
+	
 
 
   
