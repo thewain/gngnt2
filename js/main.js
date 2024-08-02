@@ -3,7 +3,7 @@
 setTimeout(function() {
 
  AOS.init({
- 	duration: 800,
+ 	duration: 300,
  	easing: 'ease',
  	once: false
  });
