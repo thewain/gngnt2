@@ -24,7 +24,7 @@ body {
   color: rgba(0, 0, 0, 0.5);
   color: #767676;
   line-height: 1.7;  
-  position: relative;
+  
 }
 h3{font-size: 1.3rem;}
 @media (max-width: 576px){
@@ -1899,10 +1899,7 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
 }
 .big{transition: all 0.3s; }
 .hide{overflow: hidden;}
-.line{
-  border-bottom: 1px solid #121212;
-  padding-bottom: 8px;
-}
+
 @media (max-width: 1200px) {
   .morebox{display: none;}
 }
@@ -2188,13 +2185,8 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
   margin-bottom: 0;
 }
 
-/*마니코메인*/
-.Bicon{width: 100%;}
-.Bicon img{width:100%}
 
 
-
-.dimbox{position: relative;}
 /* 
 .dim{
   display: none;
@@ -2218,10 +2210,68 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
   display: block;
   transition: all 0.3s;
 }
+
+@media (max-width: 1200px){
+  .dimcon{display: none;}
+}
 */
+
+
+
+
+/*기본공통 */
+button{
+  border: none;
+  background-color: transparent;
+  margin: 0 15px;
+}
+ul{ list-style: none; padding-left: 0;}
+.nopadding{padding: 0;}
+.buyking img{width: 100%;}
+.photo img{width: 100%;}
+
+.rerow{flex-direction: row-reverse;}
+.autorow{display: flex; flex-direction: row; margin-top: auto;}
+
+.sectionbg{background-color: #f1f1f5;}
+.txtshadow{text-shadow: 3px 3px 3px  rgba(0,0,0,0.4);}
+.fw{color: #fff;}
+
+video{width: 100%;}
+/*figure{ 
+  position: relative;
+  min-width: 360px;
+}
+.vWrap{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56.25%;
+  
+}*/
+
+.Bicon{width: 100%;}
+.Bicon img{width:100%;}
+
+/* 화살표 및 브랜드메인 아이템 */
+.arrow{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: rgb(233, 217, 217);
+  transition: all 0.3s;
+}
+.dimbox{position: relative;}
+.dimbox:hover .arrow{
+  color: #121212;
+  transition: all 0.3s;
+  justify-content: space-between;
+}
 .dimbox:hover img{
   transform: scale(1.1);
   transition: all 0.3s;
+ 
 }
 .dimbox .Bicon{transition: all 0.3s; overflow: hidden;}
 .dimitem a{color: #767676; background-color: #f1f1f5; display: block;}
@@ -2233,34 +2283,13 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
   transform: translateX(-50%);
   z-index: 1;
 }
-@media (max-width: 1200px){
-  .dimcon{display: none;}
-}
 
-/* 마니코 */
-.sectionbg{background-color: #f1f1f5;}
 
-/*figure{ 
-  position: relative;
-  min-width: 360px;
-}
-.vWrap{
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 56.25%;
-}*/
-.txtshadow{
-  text-shadow: 3px 3px 3px  rgba(0,0,0,0.4);
-}
-.fw{color: #fff;}
-video{width: 100%;}
-.photo img{width: 100%;}
+/*브랜드메인페이지 로고 밑줄*/
 .brandline{border-bottom: 4px solid #B71925;}
 .brandlinekinu{border-bottom:4px solid #231815;}
 .brandlineims{border-bottom:4px solid #d92243;}
-.rerow{flex-direction: row-reverse;}
+.brandlinebini{border-bottom:4px solid #25488c;}
 
 
 .awardbox{position: relative;}
@@ -2271,6 +2300,17 @@ video{width: 100%;}
   transform: translate(-50%, -15%);
 }
 .award img{width: 100%;}
+
+
+/*li 설명줄*/
+.discription{padding: 0; color: #767676;}
+.discription li{display: flex; margin-bottom: 8px;}
+.discription li::before{
+  content: "·";
+  display: block;
+  margin-right: 5px;
+}
+
 
  /* 마니코 슬라이드 */
 .swiper{
@@ -2306,7 +2346,7 @@ video{width: 100%;}
 }
 
 
-/* 키누 */
+/* 키누 에디션*/
 .edition{
   color: #fff;
   position: absolute;
@@ -2319,50 +2359,7 @@ video{width: 100%;}
 }
 .edition > p{font-size: 0.8rem;}
 
-
-
-
-
-
-/*키누탭 */
-.ktabmenu li.open, .angeltab li.open{background-color: #17A2B8;}
-.ktabmenu li, .angeltab li{border-bottom: 1px solid #17A2B8;}
-.ktabname:hover{color: #138496;}
-
-.edi2{color: #dc3545; font-weight: bold;}
-.edi{
-  padding:2px 15px;
-  color: #ffff;
-  border-radius: 10px;
-  margin: 0;
-}
-.discription{padding: 0; color: #767676;}
-.discription li{display: flex; margin-bottom: 8px;}
-.discription li::before{
-  content: "·";
-  display: block;
-  margin-right: 5px;
-}
-
-
-.picbox{padding: 0 15px;}
-.optionshow li{display: none;}
-.optionshow .cmw{display: block;}
-
-.actvcon .itempic1{display: flex; }
-.itempic{
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-
-@media (max-width: 992px){
-  .itempic{justify-content: center;}
-  .shop{text-align: center;}
-  .imsshop{text-align: left;}
-} 
-.itemlogo{max-width: 100%;}
+/* 키누제품페이지 */
 .itembox>h5{margin-top: 32px;}
 .itemrow{
   display: flex;
@@ -2374,18 +2371,28 @@ video{width: 100%;}
 .itemrow>li img{width: 100%;}
 
 
+/* 콜롬비니 */
+.indent{text-indent: 8px;}
+.w100{width: 100%; margin: 0;}
 
 
 
+/* IMS */
+.imsnano{background-color: rgba(175, 4, 4, 0.1);}
 
-/*  */
-button{
-  border: none;
-  background-color: transparent;
-  margin: 0 15px;
+.imsbox{
+  transition: all 0.3s ease;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
-ul{ list-style: none;}
-.optionshow{padding-left: 0;}
+.imspic{height: 70px;}
+.imspic>img{height: 100%;}
+
+
+
+
+
+
 
 /* 탑버튼 */
 .quick{
@@ -2412,7 +2419,7 @@ ul{ list-style: none;}
 }
 .quick:hover svg{fill :#231815}
 
-.imsnano{background-color: rgba(175, 4, 4, 0.1);}
+
 
 @media (min-width: 1200px){
   .storemo{display: none;}
@@ -2432,16 +2439,7 @@ ul{ list-style: none;}
 }
 
 
-.imsbox{
-  transition: all 0.3s ease;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-.imspic{height: 70px;}
-.imspic>img{height: 100%;}
-.nopadding{padding: 0;}
 
-.buyking img{width: 100%;}
 
 /* 팝업 */
 .popup{
