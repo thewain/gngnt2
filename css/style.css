@@ -2359,6 +2359,16 @@ video{width: 100%;}
 }
 .edition > p{font-size: 0.8rem;}
 
+/* 티탄,테이블탑페이지 에디션 */
+.editionpage{
+  
+  color: #dc3545;
+  
+
+}
+.edtionpage p{margin: 0;}
+
+
 /* 키누제품페이지 */
 .itembox>h5{margin-top: 32px;}
 .itemrow{
