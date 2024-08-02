@@ -2257,8 +2257,8 @@ video{width: 100%;}
 /* 화살표 및 브랜드메인 아이템 */
 .arrow{
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 15px;
+  right: 15px;
   color: rgb(233, 217, 217);
   transition: all 0.3s;
 }
@@ -2279,7 +2279,7 @@ video{width: 100%;}
 .txtline{
   position: absolute;
   left: 50%;
-  top: 35px;
+  top: 25px;
   transform: translateX(-50%);
   z-index: 1;
 }
@@ -2433,9 +2433,18 @@ video{width: 100%;}
     display: block;
   }
 
+  
+
 }
 @media (max-width: 1200px){
   .storepc{display: none;}
+
+  
+}
+
+@media (max-width: 770px){
+  .edition span{display: none;}
+  .arrow svg{width: 24px; height: 24px;}
 }
 
 
