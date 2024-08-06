@@ -2289,6 +2289,7 @@ video{width: 100%;}
 .brandline{border-bottom: 4px solid #B71925;}
 .brandlinekinu{border-bottom:4px solid #231815;}
 .brandlineims{border-bottom:4px solid #d92243;}
+.brandlineEnb{border-bottom:4px solid #231815;}
 .brandlinebini{border-bottom:4px solid #25488c;}
 
 
@@ -2361,10 +2362,7 @@ video{width: 100%;}
 
 /* 티탄,테이블탑페이지 에디션 */
 .editionpage{
-  
   color: #dc3545;
-  
-
 }
 .edtionpage p{margin: 0;}
 
@@ -2454,7 +2452,7 @@ video{width: 100%;}
 
 @media (max-width: 770px){
   .edition span{display: none;}
-  .arrow svg{width: 24px; height: 24px;}
+  .arrow svg{width: 26px; height: 26px;}
 }
 
 
